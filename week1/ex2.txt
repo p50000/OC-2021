@@ -1,0 +1,44 @@
+  126  history > ex2.txt
+  127  cd ..
+  128  mkdir test_folder
+  129  cd test_folder
+  130  echo renata.txt
+  131  echo "renata.txt"
+  132  echo > "renata.txt"
+  133  cd usr/bun
+  134  cd /usr/bin
+  135  ls ~ | sort grep zsh > /r-shakirova/test_folder
+  136  ls ~ | sort grep zsh > r-shakirova/test_folder
+  137  ls ~ | sort grep zsh > Users/r-shakirova/test_folder
+  138  ls ~ | sort grep zsh > Users/r-shakirova/test_folder/test.txt
+  139  ls ~ | sort -r grep zsh > Users/r-shakirova/test_folder/test.txt
+  140  ls ~ | sort -r grep zsh > usr/Users/r-shakirova/test_folder/test.txt
+  141  ls ~ | sort -r grep gcc > Users/r-shakirova.week1/ex1,txt
+  142  ls ~ | sort -r grep gcc > Users/r-shakirova.week1/ex1.txt
+  143  ls ~ | sort -r grep gcc > Users/r-shakirova/week1/ex1.txt
+  144  ls ~ | sort -r grep gcc > r-shakirova/week1/ex1.txt
+  145  ls ~ | sort -r grep gcc > /Users/r-shakirova/week1/ex1.txt
+  146  ls ~ | grep gcc | sort -r > /Users/r-shakirova/week1/ex1.txt
+  147  ls ~ | grep 'gcc' | sort -r > /Users/r-shakirova/week1/ex1.txt
+  148  ls ~ | grep 'gcc' 
+  149  ls ~ 
+  150  ls /usr/bin | grep 'gcc' | sort -r > /Users/r-shakirova/week1/ex1.txt
+  151  whoami
+  152  man man
+  153  hostnae
+  154  hostname
+  155  cd ..
+  156  cd ..
+  157  cd week1
+  158  cd ~/week1
+  159  history > ex2.txt
+  160  echho > ex3.sh
+  161  echho> ex3.sh
+  162  echo > ex3.sh
+  163  sh ex3.sh
+  164  gedit main.c
+  165  echo > main.c
+  166  gcc main.c -o ex4
+  167  ./ex4
+  168  history < ex2.txt
+  169  history > ex2.txt
