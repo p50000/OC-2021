@@ -62,17 +62,22 @@ int main() {
 
 	print_list(head);
 
+	printf("Insert node1 into empty list\n");
 	insert_node(head, first, head);
+	printf("Insert node3 after node1\n");
 	insert_node(head, third, first);
 
 	print_list(head);
 
+	printf("Insert node2 after node1\n");
 	insert_node(head, second, first);
 
 	print_list(head);
+	printf("Delete node2\n");
 	delete_node(head, second);
 
 	print_list(head);
+	printf("Insert node4 after node3\n");
 	insert_node(head, fourth, third);
 
 	print_list(head);
