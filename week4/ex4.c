@@ -34,8 +34,6 @@ int main()
         size_t n = 0;
         getline(&line, &n, stdin);
         char **argv = parsed_line(line);
-        //printf("!!%s!!", argv[0]);
-
 
         int pid = fork();
         if (pid == 0) 
