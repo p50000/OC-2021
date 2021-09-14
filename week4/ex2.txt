@@ -1,0 +1,12 @@
+ pstree command for ex2.c:
+ | |     \-+= 80009 r-shakirova ./ex2
+ | |       |-+- 80010 r-shakirova ./ex2
+ | |       | |-+- 80013 r-shakirova ./ex2
+ | |       | | \--- 80016 r-shakirova ./ex2
+ | |       | \--- 80015 r-shakirova ./ex2
+ | |       |-+- 80011 r-shakirova ./ex2
+ | |       | \--- 80014 r-shakirova ./ex2
+ | |       \--- 80012 r-shakirova ./ex2
+ 8 processes are created, since at each iteration each active process forks another process,
+therefore the overall amount of processes is multipllied by 2. Then for n iteratiions we would
+have 2^n processes.
