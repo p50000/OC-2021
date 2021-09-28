@@ -1,0 +1,9 @@
+P#	AT	BT	CT	TAT	WT
+
+P1	0	1	1	1	0
+P2	0	2	3	3	1
+P3	1	4	7	6	2
+
+
+Average turn around time = 3.333333
+Avarage waiting time = 1.000000
