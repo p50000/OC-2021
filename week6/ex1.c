@@ -41,6 +41,6 @@ void schedule_processes(struct process processes[], int n)
 
 int main()
 {
-    struct process processes[] = {{0, 1}, {0, 2}, {1, 4}};
-    schedule_processes(processes, 3);
+    struct process processes[] = {{4, 1}, {6, 4}, {10, 2}, {10, 3}, {13, 4}};
+    schedule_processes(processes, 5);
 }

@@ -8,6 +8,17 @@ struct process
     int burst_time;
 };
 
+int find_minimum_arrival_time(struct process processes[], int is_completed[], int n) 
+{
+    int min_arr_time = INT_MAX;
+    for (int i = 0; i < n; i++) {
+        if (!is_completed[i] && processes[i].arrival_time < min_arr_time) {
+            min_arr_time = processes[i].arrival_time;
+        }
+    }
+    return min_arr_time;
+}
+
 void schedule_processes(struct process processes[], int n) 
 {
     int completion_time[MAX_PROCESS], turnaround_time[MAX_PROCESS], waiting_time[MAX_PROCESS];
@@ -20,7 +31,9 @@ void schedule_processes(struct process processes[], int n)
     int current_time  = processes[0].arrival_time;
     int total_waiting_time = 0;
     int total_turnaround_time = 0;
-    while (1)
+
+    int completed_tasks = 0;
+    while (completed_tasks < n)
     {
         int shortest_job = -1;
         int min_burst_time = INT_MAX;
@@ -32,7 +45,11 @@ void schedule_processes(struct process processes[], int n)
                 shortest_job = j;
             }
         }
-        if (shortest_job == -1) break;
+        if (shortest_job == -1)
+        {
+            current_time = find_minimum_arrival_time(processes, is_complete, n);
+            continue;
+        }
 
         if (current_time < processes[shortest_job].arrival_time) 
         {
@@ -48,6 +65,7 @@ void schedule_processes(struct process processes[], int n)
         total_turnaround_time += turnaround_time[shortest_job];
 
         is_complete[shortest_job] = 1;
+        completed_tasks++;
     }
 
     printf("P#\tAT\tBT\tCT\tTAT\tWT\n\n");
@@ -62,6 +80,6 @@ void schedule_processes(struct process processes[], int n)
 
 int main()
 {
-    struct process processes[] = {{0, 2}, {0, 1}, {1, 4}};
-    schedule_processes(processes, 3);
+    struct process processes[] = {{4, 1}, {6, 4}, {10, 2}, {10, 3}, {13, 4}};
+    schedule_processes(processes, 5);
 }
