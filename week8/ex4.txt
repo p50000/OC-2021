@@ -1,0 +1,10 @@
+mem_usage: 10715136
+mem_usage: 20721664
+mem_usage: 30724096
+mem_usage: 40726528
+mem_usage: 50728960
+mem_usage: 60731392
+mem_usage: 70733824
+mem_usage: 80736256
+mem_usage: 90738688
+mem_usage: 100741120

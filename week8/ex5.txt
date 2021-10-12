@@ -1,0 +1,4 @@
+Physical address is itself an actual address of a memory cell in the hardware. Virtual address 
+is created from the viewpointt of a process: it is some abstract address which is used by the process
+and therefore can be bigger than the actual physical memory at the device, since the virtual memory
+assumes no other memory is allocated than those of the process.
