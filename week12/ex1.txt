@@ -35,3 +35,7 @@
       6000-6fff : PCI Bus 0000:3a
   efa0-efbf : 0000:00:1f.4
     efa0-efbf : i801_smbus
+
+Direct access controllers are represented by dma1 - with DMA a device can temporarily access a specific ranfe of the ram.
+pic1 - programmable interrupt controller - manages hardware interrupts and sends them to the appropriate system interrupt
+timer1 - it is hardware block which schedules the execution of a function (=a time handler) at a particular time in the future
