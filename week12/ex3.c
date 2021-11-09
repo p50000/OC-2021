@@ -8,8 +8,10 @@
 
 #define N 3
 
-void addToQueue(int value, int* queue, int size){
-    for(int i=1;i<size;i++){
+void addToQueue(int value, int* queue, int size)
+{
+    for(int i=1;i<size;i++)
+    {
         queue[i-1]=queue[i];
     }
     queue[size-1]=value;
